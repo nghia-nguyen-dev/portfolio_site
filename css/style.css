@@ -1,0 +1,331 @@
+*:hover {
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: none;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+header {
+  background-color: #2727e6;
+  height: 100vh;
+  padding: 4rem calc(.1rem + 4vw) 0;
+}
+
+article {
+  -webkit-transition: -webkit-transform .6s ease;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  padding: 4rem calc(.1rem + 4vw) 1rem;
+  font-size: 1.25rem;
+  background-color: rgba(33, 33, 78, 0.4);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow: scroll;
+}
+
+article .container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+article .container > h3 {
+  font-size: inherit;
+  color: white;
+  background-color: black;
+}
+
+article ul {
+  background-color: black;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+article > p {
+  background-color: black;
+}
+
+article .email {
+  margin: 4rem 0 2rem;
+}
+
+article .email p {
+  background-color: black;
+}
+
+article .email p:nth-of-type(1) {
+  margin-bottom: 5px;
+}
+
+article .email p:nth-of-type(2) {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+article .close-icon {
+  line-height: 1;
+  padding: 0 0.2rem;
+  color: black;
+  background-color: white;
+  margin-bottom: 1.6rem;
+  margin-left: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  font-size: 1.9rem;
+  top: 1.1rem;
+  right: calc(0.075rem + 4vw);
+}
+
+article .close-icon:hover {
+  opacity: 1;
+}
+
+article .social > p {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+article .social a {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  padding: 0 calc(.1rem + 4vw);
+}
+
+.info {
+  margin-top: auto;
+}
+
+.arrow {
+  color: white;
+  z-index: 100;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  font-weight: 900;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: fixed;
+  bottom: 1.2rem;
+  right: calc(-0.125rem + 4vw);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  overflow: hidden;
+  font-size: 2.3rem;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.hamburger {
+  position: fixed;
+  top: 0.6rem;
+  right: calc(-0.325rem + 4vw);
+  color: white;
+  font-size: 2.7rem;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  z-index: 100;
+}
+
+.hamburger:hover {
+  opacity: 1;
+}
+
+.name {
+  display: none;
+  word-break: break-word;
+}
+
+#projects {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5.5rem 0 0;
+}
+
+#projects h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.7rem;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 4rem 0;
+  padding: 4rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: black;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+h3 {
+  margin-bottom: .2rem;
+  font-size: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+section .content {
+  margin-bottom: 1.2rem;
+}
+
+section p {
+  font-size: 1rem;
+  opacity: .45;
+}
+
+figure {
+  overflow: hidden;
+}
+
+img {
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mouse {
+  pointer-events: none;
+  z-index: 1000;
+  position: absolute;
+  -webkit-transform: translate(-20%, -20%) rotate(35deg);
+          transform: translate(-20%, -20%) rotate(35deg);
+  display: none;
+}
+
+footer {
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  padding: 5.5rem calc(.1rem + 4vw) 3rem;
+  font-size: 1rem;
+  background-color: black;
+}
+
+footer .social {
+  padding-top: 3rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+footer .email {
+  margin-bottom: 2rem;
+}
+
+footer h2 {
+  padding: 0 0 1.7rem;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+footer a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: underline;
+}
+
+@media (min-width: 680px) {
+  .mouse {
+    display: block;
+  }
+  header {
+    font-size: 4.5rem;
+  }
+  header .greeting {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  article {
+    font-size: 1.5rem;
+  }
+  article a {
+    font-size: 1.5rem;
+  }
+  section {
+    padding-bottom: 1px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  section a {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 38% 1fr;
+        grid-template-columns: 38% 1fr;
+  }
+  section a .content {
+    margin-bottom: 0;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .portfolio {
+    gap: 0;
+    padding: 3.5rem 0;
+  }
+  #projects h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  footer {
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    font-size: 5.5rem;
+  }
+  .arrow {
+    font-size: 2.6rem;
+  }
+  .hamburger {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
