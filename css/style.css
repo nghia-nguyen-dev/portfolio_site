@@ -237,7 +237,6 @@ img:hover {
   position: absolute;
   -webkit-transform: translate(-20%, -20%) rotate(35deg);
           transform: translate(-20%, -20%) rotate(35deg);
-  display: none;
 }
 
 footer {
@@ -273,9 +272,6 @@ footer a {
 }
 
 @media (min-width: 680px) {
-  .mouse {
-    display: block;
-  }
   header {
     font-size: 4.5rem;
   }
