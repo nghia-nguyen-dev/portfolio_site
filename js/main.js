@@ -137,11 +137,11 @@ hamburger.addEventListener('click', function () {
     hamburger.style.display = 'none';
     arrow.style.display = 'none';
 
-    // // use to offset hamburger transition timing
-    // setTimeout(function() { 
-    //     headerChildren[0].style.filter = 'blur(3px)';
-    // }, 
-    // 350);
+    // use to offset hamburger transition timing
+    setTimeout(function() { 
+        headerChildren[0].style.filter = 'blur(3px)';
+    }, 
+    350);
 
 });
 
