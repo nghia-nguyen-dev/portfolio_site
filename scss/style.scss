@@ -204,8 +204,25 @@ img {
     z-index: 1000;
     position: absolute;
     transform: translate(-20%, -20%) rotate(35deg);
-
 }
+
+.pulse-anim {
+    animation: pulseAnim .45s infinite alternate;
+}
+
+@keyframes pulseAnim {
+    from {
+        transform: 
+            scale(1)
+            translate(-20%, -20%) rotate(35deg);
+    }
+    to {
+        transform:
+            scale(.85)
+            translate(-20%, -20%) rotate(35deg);
+    }
+}
+
 
 footer {
     letter-spacing: 0.5px;

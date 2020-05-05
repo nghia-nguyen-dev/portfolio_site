@@ -4,6 +4,7 @@ const article = document.querySelector('article');
 const arrow = document.querySelector('.arrow');
 const content = document.querySelector('.content')
 const mouse = document.querySelector('.mouse');
+const nav = document.querySelector('nav');
 
 
 // ------------------------- mouse follow ------------------------- //
@@ -56,4 +57,14 @@ closeIcon.addEventListener('click', function() {
     content.style.filter = '';
     hamburger.style.display = '';
 });
+
+// ------------------------- nav hover effect ------------------------- //
+
+nav.addEventListener('mouseover', (e) => {
+    mouse.classList.add('pulse-anim');
+})
+
+nav.addEventListener('mouseout', (e) => {
+    mouse.classList.remove('pulse-anim');
+})
 

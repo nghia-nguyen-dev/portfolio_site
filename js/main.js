@@ -99,7 +99,7 @@ function introLoop() {
 }
 
 
-// ------------------------- hover effect ------------------------- //
+// ------------------------- img hover effect ------------------------- //
 
 portfolioDiv.addEventListener('mousemove', (e) => {
 
@@ -122,6 +122,16 @@ portfolioDiv.addEventListener('mousemove', (e) => {
     
 });
 
+
+// ------------------------- nav hover effect ------------------------- //
+
+nav.addEventListener('mouseover', (e) => {
+    mouse.classList.add('pulse-anim');
+})
+
+nav.addEventListener('mouseout', (e) => {
+    mouse.classList.remove('pulse-anim');
+})
 
 
 // ------------------------- click functionality ------------------------- //
