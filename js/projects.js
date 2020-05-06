@@ -34,10 +34,11 @@ const options = {
 };
 
 hamburger.addEventListener('click', function () {
+    
     baffle('.container > h3', options).reveal(750, 0);
-    baffle('.email p', options).reveal(750, 400);
-    baffle('.social > p', options).reveal(750, 600);
-    baffle('.social a', options).reveal(750, 800);
+    baffle('article .email p', options).reveal(750, 400);
+    baffle('article .social > p', options).reveal(750, 600);
+    baffle('article .social a', options).reveal(750, 800);
     
     article.style.transform = 'translateX(0)';
     hamburger.style.display = 'none';
