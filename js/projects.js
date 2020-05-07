@@ -61,7 +61,7 @@ closeIcon.addEventListener('click', function() {
 
 // ------------------------- nav hover effect ------------------------- //
 
-if(mouse !== null) {
+if(mouse.style.display !== 'none') {
    
     nav.addEventListener('mouseover', () => {
         mouse.classList.add('pulse-anim');
@@ -85,7 +85,8 @@ if(mouse !== null) {
 
     // removes mouse pointer and all functionality 
     if (check) {
-        mouse = null;
+        // mouse = null;
+        mouse.style.display = 'none';
     }
 
 })();

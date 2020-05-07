@@ -247,7 +247,8 @@ function callback(entries) {
 
     // removes mouse pointer and all functionality 
     if (check) {
-        mouse = null;
+        // mouse = null;
+        mouse.style.display = 'none'
     }
 
 })();
