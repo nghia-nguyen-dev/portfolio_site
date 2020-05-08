@@ -167,6 +167,8 @@ closeIcon.addEventListener('click', function() {
 
 
 // ------------------------- mouse function ------------------------- //
+
+// disabled custom pointer from displaying if device is touch enalbed
 if (isMobileTablet() !== true) {
     window.addEventListener('mousemove', function(e) {
         mouse.style.display = '';
@@ -235,7 +237,8 @@ function callback(entries) {
 };
 
 
-// ------------------------- detect touch enabled device ------------------------- //
+// ------------------------- detect touch enabled device function ------------------------- //
+
 function isMobileTablet(){
     var check = false;
     (function(a){
