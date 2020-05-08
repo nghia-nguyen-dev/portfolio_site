@@ -24,14 +24,8 @@ if (isMobileTablet() !== true) {
         // this makes it so the mouse icon stays put on scroll
         mouse.style.position = 'fixed';
     });
-
-    nav.addEventListener('mouseover', () => {
-        mouse.classList.add('pulse-anim');
-    });
-    
-    nav.addEventListener('mouseout', () => {
-        mouse.classList.remove('pulse-anim');
-    });
+} else {
+    mouse.style.display = 'none'
 }
 
 // ------------------------- click functionality ------------------------- //
@@ -69,7 +63,13 @@ closeIcon.addEventListener('click', function() {
 
 // ------------------------- nav hover effect ------------------------- //
 
+nav.addEventListener('mouseover', () => {
+    mouse.classList.add('pulse-anim');
+});
 
+nav.addEventListener('mouseout', () => {
+    mouse.classList.remove('pulse-anim');
+});
 
 
 // ------------------------- detect touch enabled device function ------------------------- //
